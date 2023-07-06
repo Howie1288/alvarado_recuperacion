@@ -9,7 +9,7 @@ try {
     //echo "<pre>";
     //var_dump($aplicaciones);
     // echo "</pre>";
-    exit;
+    //exit;
     $oficiales = $oficiales->buscar();
 } catch (PDOException $e) {
     $error = $e->getMessage();

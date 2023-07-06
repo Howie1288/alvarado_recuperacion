@@ -2,19 +2,20 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-require_once '../../modelos/Problemas_Reportados.php';
+require_once '../../modelos/problemas_reportados.php';
 
 // Obtener los valores de los parámetros si están presentes
 $apli_id = $_GET['apli_id'] ?? '';
 $offi_grado = $_GET['offi_grado'] ?? '';
 $offi_arma = $_GET['offi_arma'] ?? '';
 $offi_nombre = $_GET['offi_nombre'] ?? '';
+$offi_apellido = $_GET['offi_apellido'] ?? '';
 $asigoff_id = $_GET['asigoff_id'] ?? '';
 
 try {
     $resultados = array();
     $asignacionOficiales = new AsignacionOficiales();
-    $resultados = $asignacionOficiales->buscar($apli_id, $offi_grado,$offi_arma, $offi_nombre, $asigoff_id);
+    $resultados = $asignacionOficiales->buscar($apli_id, $offi_grado,$offi_arma, $offi_nombre, $offi_apellido, $asigoff_id);
 } catch (PDOException $e) {
     $error = $e->getMessage();
 } catch (Exception $e2) {
@@ -63,11 +64,11 @@ if ($totalProblemas > 0) {
                     <td colspan="2"><?= $resultados[0]['OFFI_GRADO'] ?? ''?> <?= $resultados[0]['OFFI_ARMA'] ?? '' ?> <?= $resultados[0]['Offi_NOMBRE'] ?? '' ?> <?= $resultados[0]['Offi_APELLIDO'] ?? '' ?></td>
                 </tr>
                 <tr>
-                    <th colspan="4" class="text-center">ESTADOS POR REALIZAR</th>
+                    <th colspan="4" class="text-center">PROBLEMAS REPORTADOS</th>
                 </tr>
                 <tr>
                     <th>No.</th>
-                    <th>Descripcion</th>
+                    <th>PROBLEMA REPORTADO</th>
                     <th>Fecha </th>
                     <th>Estado</th>
                 </tr>
@@ -84,13 +85,13 @@ if ($totalProblemas > 0) {
                     <?php endforeach ?>
                 <?php else : ?>
                     <tr>
-                        <td colspan="4">NO EXISTEN REGISTROS</td>
+                        <td colspan="4">SIN PROBLEMAS REPORTADOS</td>
                     </tr>
                 <?php endif ?>
             </tbody>
             <tfoot>
                 <tr>
-                    <th colspan="2">Porcentaje de avance</th>
+                    <th colspan="2">CANTIDAD DE PROBLEMAS REPORTADOS</th>
                     <td colspan="2"><?= $porcentajeAvance ?>%</td>
                 </tr>
             </tfoot>

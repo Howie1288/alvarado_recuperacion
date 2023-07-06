@@ -11,8 +11,8 @@ try {
     //echo "<pre>";
     //var_dump($aplicaciones);
     //echo "</pre>";
-     exit;
-    $aplicaciones = $aplicacion->buscar();
+     //exit;
+    $aplicaciones = $aplicaciones->buscar();
 } catch (PDOException $e) {
     $error = $e->getMessage();
 } catch (Exception $e2) {

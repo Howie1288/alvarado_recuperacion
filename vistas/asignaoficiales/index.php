@@ -12,7 +12,7 @@ try {
     //echo "<pre>";
     //var_dump($aplicaciones);
      //echo "</pre>";
-    exit;
+    //exit;
     $oficiales = new Oficiales($_GET);
     $oficiales = $oficiales->buscar();
 } catch (PDOException $e) {
@@ -27,7 +27,7 @@ try {
 <div class="container">
     <h1 class="text-center">Formulario de ingreso de Oficiales y aplicaciones</h1>
     <div class="row justify-content-center">
-        <form action="/alvarado_recuperacion/controladores/asigna_programadores/guardar.php" method="POST" class="col-lg-8 border bg-light p-3">
+        <form action="/alvarado_recuperacion/controladores/asignaoficiales/guardar.php" method="POST" class="col-lg-8 border bg-light p-3">
             <div class="row mb-3">
                 <div class="col">
                     <label for="asigoff_apli_id">Aplicación</label>

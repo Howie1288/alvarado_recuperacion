@@ -9,7 +9,7 @@ try {
     $problema = new Problemas();
     $aplicacion = new Aplicacion();
     $problemas = $problema->buscar();
-    $aplicaciones = $aplicacion->buscar();
+    $aplicaciones = $aplicaciones->buscar();
 } catch (PDOException $e) {
     $error = $e->getMessage();
 } catch (Exception $e2) {
@@ -29,8 +29,8 @@ try {
                     <label for="prob_apli_id">Aplicación</label>
                     <select name="prob_apli_id" id="prob_apli_id" class="form-control">
                         <option value="">SELECCIONE...</option>
-                        <?php foreach ($aplicaciones as $key => $aplicacion) : ?>
-                            <option value="<?= $aplicacion['APLI_ID'] ?>"><?= $aplicacion['APLI_NOMBRE'] ?></option>
+                        <?php foreach ($aplicaciones as $key => $aplicaciones) : ?>
+                            <option value="<?= $aplicaciones['APLI_ID'] ?>"><?= $aplicaciones['APLI_NOMBRE'] ?></option>
                         <?php endforeach?>
                     </select>
                 </div>
