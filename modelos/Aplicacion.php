@@ -45,14 +45,14 @@ class Aplicacion extends Conexion{
     
 
     public function modificar(){
-        $sql = "UPDATE aplicaciones SET apli_nombre = '$this->apli_nombre', apli_fecha = '$this->apli_fecha' WHERE aplicacion_id = $this->apli_id";
+        $sql = "UPDATE aplicaciones SET apli_nombre = '$this->apli_nombre', apli_fecha = '$this->apli_fecha' WHERE apli_id = $this->apli_id";
         
         $resultado = self::ejecutar($sql);
         return $resultado;
     }
 
     public function eliminar(){
-        $sql = "UPDATE aplicaciones SET apli_situacion = 0 WHERE aplicacion_id = $this->apli_id";
+        $sql = "UPDATE aplicaciones SET apli_situacion = 0 WHERE apli_id = $this->apli_id";
         
         $resultado = self::ejecutar($sql);
         return $resultado;

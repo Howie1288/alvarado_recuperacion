@@ -22,7 +22,7 @@ class AsignacionOficiales extends Conexion{
             t.prob_descripcion, t.prob_estado, t.prob_fecha
             FROM aplicaciones a
             JOIN asignacion_oficiales ap ON a.apli_id = ap.asigoff_apli_id
-            JOIN programadores p ON ap.asigoff_offi_id = p.offi_id
+            JOIN oficiales p ON ap.asigoff_offi_id = p.offi_id
             JOIN problemas t ON t.prob_apli_id = a.apli_id
             WHERE 1=1";
     

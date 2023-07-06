@@ -6,8 +6,8 @@ require_once '../../modelos/Aplicacion.php';
     try {
         $aplicacion = new Aplicacion($_GET);
         $aplicaciones = $aplicacion->buscar();
-            // var_dump($clientes);
-            // exit;
+            //var_dump($aplicaciones);
+           // exit;
     } catch (PDOException $e) {
         $error = $e->getMessage();
     } catch (Exception $e2){
