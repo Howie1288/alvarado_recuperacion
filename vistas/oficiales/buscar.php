@@ -9,7 +9,7 @@ error_reporting(E_ALL);
 <div class="container">
     <h1 class="text-center">Buscar Oficiales</h1>
     <div class="row justify-content-center">
-        <form action="/alvarado_recuperacion/controladores/programadores/buscar.php" method="GET" class="col-lg-8 border bg-light p-3">
+        <form action="/alvarado_recuperacion/controladores/oficiales/buscar.php" method="GET" class="col-lg-8 border bg-light p-3">
             <div class="row mb-3">
                 <div class="col">
                     <label for="offi_grado">Grado del Oficiales</label>

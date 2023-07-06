@@ -22,7 +22,7 @@ require_once '../../modelos/Aplicacion.php';
     <div class="container">
         <h1 class="text-center">Formulario de búsqueda de aplicaciones</h1>
         <div class="row justify-content-center">
-            <form action="/final_marin/controladores/aplicaciones/buscar.php" method="GET" class="col-lg-8 border bg-light p-3">
+            <form action="/alvarado_recuperacion/controladores/aplicaciones/buscar.php" method="GET" class="col-lg-8 border bg-light p-3">
             <div class="mb-3">
                     <label for="aplicacion_nombre" class="form-label">Ingrese el nombre de la Aplicacion</label>
                     <input type="text" name="aplicacion_nombre" id="aplicacion_nombre" class="form-control">
