@@ -15,10 +15,10 @@
                     </a>
                     <ul class="dropdown-menu bg-dark">
                         <li class="nav-item">
-                            <a class="nav-link" href="/final_marin/vistas/aplicaciones/index.php">Ingresar aplicacion</a>
+                            <a class="nav-link" href="/alvarado_recuperacion/vistas/aplicaciones/index.php">Ingresar aplicacion</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/final_marin/vistas/aplicaciones/buscar.php">Buscar aplicacion</a>
+                            <a class="nav-link" href="/alvarado_recuperacion/vistas/aplicaciones/buscar.php">Buscar aplicacion</a>
                         </li>
                     </ul>
                 </li>
