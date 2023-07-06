@@ -6,7 +6,7 @@ require '../../modelos/Oficiales.php';
 try {
     $oficiales = new Oficiales($_GET);
     
-    $oficiales = $oficial->buscar();
+    $oficiales = $oficiales->buscar();
     // echo "<pre>";
     // var_dump($oficiales);
     // echo "</pre>";
@@ -50,6 +50,7 @@ try {
                         <tr>
                             <td><?= $key + 1 ?></td>
                             <td><?= $oficiales['OFFI_GRADO'] ?></td>
+                            <td><?= $oficiales['OFFI_ARMA'] ?></td>
                             <td><?= $oficiales['OFFI_NOMBRE'] ?></td>
                             <td><?= $oficiales['OFFI_APELLIDO'] ?></td>
                             <td><a class="btn btn-warning w-100" href="/alvarado_recuperacion/vistas/oficiales/modificar.php?offi_id=<?= $oficiales['OFFI_ID']?>">Modificar</a></td>
