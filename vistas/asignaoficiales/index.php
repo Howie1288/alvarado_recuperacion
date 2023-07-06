@@ -7,8 +7,8 @@ require_once '../../modelos/Aplicacion.php';
 require_once '../../modelos/Oficiales.php';
 
 try {
-    $aplicacion = new Aplicacion($_GET);
-    $aplicaciones = $aplicacion->buscar();
+    $aplicaciones = new Aplicacion($_GET);
+    $aplicaciones = $aplicaciones->buscar();
 
     $oficiales = new Oficiales($_GET);
     $oficiales = $oficiales->buscar();
@@ -30,8 +30,8 @@ try {
                     <label for="asigoff_apli_id">Aplicación</label>
                     <select name="asigoff_apli_id" id="asigoff_apli_id" class="form-control">
                         <option value="">SELECCIONE...</option>
-                        <?php foreach ($aplicaciones as $key => $aplicacion) : ?>
-                            <option value="<?= $aplicacion['APLI_ID'] ?>"><?= $aplicacion['APLI_NOMBRE'] ?></option>
+                        <?php foreach ($aplicaciones as $key => $aplicaciones) : ?>
+                            <option value="<?= $aplicaciones['APLI_ID'] ?>"><?= $aplicaciones['APLI_NOMBRE'] ?></option>
                         <?php endforeach ?>
                     </select>
                 </div>
@@ -42,7 +42,7 @@ try {
                     <select name="asigoff_offi_id" id="asigoff_offi_id" class="form-control">
                         <option value="">SELECCIONE...</option>
                         <?php foreach ($oficiales as $key => $oficiales) : ?>
-                            <option value="<?= $oficiales['OFFI_ID'] ?>"><?= $oficiles['OFFI_NOMBRE'] ?></option>
+                            <option value="<?= $oficiales['OFFI_ID'] ?>"><?= $oficiales['OFFI_NOMBRE'] ?></option>
                         <?php endforeach ?>
                     </select>
                 </div>
