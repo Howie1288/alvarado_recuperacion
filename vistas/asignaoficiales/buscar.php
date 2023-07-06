@@ -6,6 +6,10 @@ try {
     $aplicacion = new Aplicacion();
     $oficiales = new Oficiales();
     $aplicaciones = $aplicacion->buscar();
+    //echo "<pre>";
+    //var_dump($aplicaciones);
+    // echo "</pre>";
+    exit;
     $oficiales = $oficiales->buscar();
 } catch (PDOException $e) {
     $error = $e->getMessage();

@@ -8,9 +8,9 @@ require '../../modelos/Aplicacion.php';
 
 try {
     $aplicaciones = new Aplicacion($_GET);
-    echo "<pre>";
-    var_dump($aplicaciones);
-    echo "</pre>";
+    //echo "<pre>";
+    //var_dump($aplicaciones);
+    //echo "</pre>";
      exit;
     $aplicaciones = $aplicacion->buscar();
 } catch (PDOException $e) {

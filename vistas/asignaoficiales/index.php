@@ -9,7 +9,10 @@ require_once '../../modelos/Oficiales.php';
 try {
     $aplicaciones = new Aplicacion($_GET);
     $aplicaciones = $aplicaciones->buscar();
-
+    //echo "<pre>";
+    //var_dump($aplicaciones);
+     //echo "</pre>";
+    exit;
     $oficiales = new Oficiales($_GET);
     $oficiales = $oficiales->buscar();
 } catch (PDOException $e) {

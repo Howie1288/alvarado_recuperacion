@@ -5,6 +5,12 @@ CREATE TABLE aplicaciones (
     apli_situacion varchar (20)
 );
 
+ALTER TABLE aplicaciones
+MODIFY (apli_situacion char(1) DEFAULT '1');
+
+
+
+
 CREATE TABLE problemas (
     prob_id Serial Primary Key,
     prob_apli_id INTEGER NOT NULL,
