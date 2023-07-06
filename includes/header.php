@@ -11,6 +11,6 @@
 
         } */
     </style>
-    <title>REGISTRO DE APLICACIONES</title>
+    <title>REGISTRO DE PROBLEMAS DE APLICACIONES</title>
 </head>
 <body>
