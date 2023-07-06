@@ -28,10 +28,10 @@
                     </a>
                     <ul class="dropdown-menu bg-dark">
                         <li class="nav-item">
-                            <a class="nav-link" href="/alvarado_recuperacion/vistas/programadores/index.php">Ingresar Oficiales</a>
+                            <a class="nav-link" href="/alvarado_recuperacion/vistas/oficiales/index.php">Ingresar Oficiales</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/alvarado_recuperacion/vistas/programadores/buscar.php">Buscar Oficiales</a>
+                            <a class="nav-link" href="/alvarado_recuperacion/vistas/oficiales/buscar.php">Buscar Oficiales</a>
                         </li>
                     </ul>
                 </li>
@@ -41,10 +41,10 @@
                     </a>
                     <ul class="dropdown-menu bg-dark">
                         <li class="nav-item">
-                            <a class="nav-link" href="/alvarado_recuperacion/vistas/asigna_programadores/index.php">Asignar Oficiales a las APPS</a>
+                            <a class="nav-link" href="/alvarado_recuperacion/vistas/asignaoficiales/index.php">Asignar Oficiales a las APPS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/alvarado_recuperacion/vistas/asigna_programadores/buscar.php">Buscar Oficiales asignados a las APPS</a>
+                            <a class="nav-link" href="/alvarado_recuperacion/vistas/asignaoficiales/buscar.php">Buscar Oficiales asignados a las APPS</a>
                         </li>
                     </ul>
                 </li>
@@ -54,10 +54,10 @@
                     </a>
                     <ul class="dropdown-menu bg-dark">
                         <li class="nav-item">
-                            <a class="nav-link" href="/alvarado_recuperacion/vistas/tareas/index.php">Ingresar Problemas</a>
+                            <a class="nav-link" href="/alvarado_recuperacion/vistas/problemas/index.php">Ingresar Problemas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/alvarado_recuperacion/vistas/tareas/buscar.php">Buscar Problemas</a>
+                            <a class="nav-link" href="/alvarado_recuperacion/vistas/problemas/buscar.php">Buscar Problemas</a>
                         </li>
                     </ul>
                 </li>
@@ -68,7 +68,7 @@
                     <ul class="dropdown-menu bg-dark">
                         <li class="nav-item">
                            
-                            <a class="nav-link" href="/alvarado_recuperacion/vistas/progreso_aplicacion/progreso_aplicacion.php">Buscar Problemas Reportados</a>
+                            <a class="nav-link" href="/alvarado_recuperacion/vistas/problemas_reportados/problemas_reportados.php">Buscar Problemas Reportados</a>
                         </li>
                     </ul>
                 </li>

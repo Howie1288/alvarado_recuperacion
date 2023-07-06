@@ -19,7 +19,7 @@ error_reporting(E_ALL);
 
             <div class="row mb-3">
                 <div class="col">
-                    <label for="offi_arma">Grado del Oficial</label>
+                    <label for="offi_arma">Arma del Oficial</label>
                     <input type="text" name="offi_arma" id="offi_arma" class="form-control">
                 </div>
             </div>
