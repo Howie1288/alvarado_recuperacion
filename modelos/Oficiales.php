@@ -4,7 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 require_once 'Conexion.php';
 
-class Programador extends Conexion{
+class Oficiales extends Conexion{
     public $offi_id;
     public $offi_grado;
     public $offi_arma;
