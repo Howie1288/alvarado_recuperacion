@@ -21,7 +21,7 @@ CREATE TABLE oficiales (
     offi_arma VARCHAR (50),
     offi_nombre VARCHAR (30),
     offi_apellido VARCHAR (30),
-    offi_situacion CHAR (1) DEFAULT '1',
+    offi_situacion CHAR (1) DEFAULT '1'
 );
 
 CREATE TABLE asignacion_oficiales(
